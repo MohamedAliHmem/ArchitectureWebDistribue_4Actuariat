@@ -1,0 +1,16 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: payments-service
+  datasource:
+    url: jdbc:mysql://localhost:3307/payments_db?createDatabaseIfNotExist=true
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
